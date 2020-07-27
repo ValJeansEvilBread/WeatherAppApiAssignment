@@ -1,4 +1,6 @@
- 
+ $(document).ready(function(){
+	
+	
    switch(data.weather[0].get('description')){
       	case "clear sky":
           	$("body").css("background-image",'url("https://images.unsplash.com/photo-1491308056676-205b7c9a7dc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80")');
@@ -30,6 +32,7 @@
       	default:
         	$('body').css('background-image','url("https://images.unsplash.com/photo-1490845433441-5174fe36bc30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=890&q=80")');
         	break;
-               }
+    }
+});
     
 

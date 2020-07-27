@@ -12,6 +12,7 @@
 	<body>
 	
 		<div class="container bg-light justify-content-center">
+			<!-- <div th:style="background-img: url('@{${data.weather[0].get('description') + '.jpg'}')"> -->
 		    <div class="row">
 		        <div class="col col-md-6 offset-md-3">
 		            <br/>
@@ -41,11 +42,12 @@
 					<div>
 						<center>
 							<table border="1">
-								<th: block th:each="zipCode:${zipList}">
-									<tr>
-										<td th:text="${zipCode.zip}" style="width:80px; border:1px solid #000; display:table-cell;"/>
-									</tr>					
-								</th:block>
+								<tr>
+									<th align="center"> Previous Searches </th>
+								</tr>
+								<tr th:each="zipCode:${zipList}">
+									<td th:text="${zipCode.zip}"  />
+								</tr>					
 							</table>
 						</center>
 					</div>
@@ -54,6 +56,7 @@
 					
 		        </div>
 		    </div>
+			<!-- </div> -->
 
 		</div>
 		
